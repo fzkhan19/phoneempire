@@ -9,7 +9,7 @@ import {
 	CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import { Laptop, Settings, Smartphone, Wrench } from "lucide-react";
+import { Gamepad, Laptop, Settings, Smartphone, Wrench } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,7 +21,7 @@ const getMobileServices = (t: ReturnType<typeof useTranslations>) => [
 	},
 	{
 		title: t("mobileServices.waterDamage"),
-		image: "/services/water-damage.png",
+		image: "/services/water-damage.jpg",
 	},
 	{
 		title: t("mobileServices.cameraRepair"),
@@ -29,20 +29,24 @@ const getMobileServices = (t: ReturnType<typeof useTranslations>) => [
 	},
 	{
 		title: t("mobileServices.batteryReplacement"),
-		image: "/services/battery.png",
+		image: "/services/battery.jpg",
 	},
 	{
 		title: t("mobileServices.buttonRepair"),
-		image: "/services/button-repair.jpeg",
+		image: "/services/button-repair.jpg",
 	},
 	{
 		title: t("mobileServices.chargePortRepair"),
 		image: "/services/charge-port.jpg",
 	},
-	{ title: t("mobileServices.speakerRepair"), image: "/services/speaker.webp" },
+	{ title: t("mobileServices.speakerRepair"), image: "/services/speaker.jpg" },
 	{
 		title: t("mobileServices.carrierUnlock"),
-		image: "/services/carrier-unlock.png",
+		image: "/services/carrier-unlock.jpg",
+	},
+	{
+		title: t("mobileServices.motherboardRepair"),
+		image: "/services/motherboard.jpg",
 	},
 ];
 
@@ -53,13 +57,13 @@ const getLaptopServices = (t: ReturnType<typeof useTranslations>) => [
 	},
 	{
 		title: t("laptopServices.batteryReplacement"),
-		image: "/services/laptop-battery.webp",
+		image: "/services/laptop-battery.jpg",
 	},
 	{
 		title: t("laptopServices.hardDriveServices"),
-		image: "/services/hard-drive.webp",
+		image: "/services/hard-drive.jpg",
 	},
-	{ title: t("laptopServices.ramUpgrade"), image: "/services/ram.webp" },
+	{ title: t("laptopServices.ramUpgrade"), image: "/services/ram.jpg" },
 ];
 
 const getSoftwareServices = (t: ReturnType<typeof useTranslations>) => [
@@ -69,7 +73,7 @@ const getSoftwareServices = (t: ReturnType<typeof useTranslations>) => [
 	},
 	{
 		title: t("softwareServices.softwareInstallation"),
-		image: "/services/software.webp",
+		image: "/services/software.jpg",
 	},
 	{
 		title: t("softwareServices.systemOptimization"),
@@ -77,16 +81,27 @@ const getSoftwareServices = (t: ReturnType<typeof useTranslations>) => [
 	},
 	{
 		title: t("softwareServices.dataRecovery"),
-		image: "/services/data-recovery.webp",
+		image: "/services/data-recovery.jpg",
 	},
-	{ title: t("softwareServices.osInstall"), image: "/services/os.png" },
+	{ title: t("softwareServices.osInstall"), image: "/services/os.jpg" },
 	{
 		title: t("softwareServices.diagnosticScan"),
-		image: "/services/diagnostic.webp",
+		image: "/services/diagnostic.jpg",
 	},
 	{
 		title: t("softwareServices.driverUpdates"),
-		image: "/services/drivers.webp",
+		image: "/services/drivers.jpg",
+	},
+];
+
+const getConsoleServices = (t: ReturnType<typeof useTranslations>) => [
+	{
+		title: t("consoleServices.playstationRepair"),
+		image: "/services/playstation.jpg",
+	},
+	{
+		title: t("consoleServices.nintendoRepair"),
+		image: "/services/nintendo.jpg",
 	},
 ];
 
@@ -126,9 +141,9 @@ const ServiceCarousel = ({
 										<Image
 											src={service.image}
 											alt={service.title}
-											width={400}
-											height={400}
-											className="max-h-[300px] w-full md:max-h-[400px]"
+											width={1024}
+											height={1024}
+											className="aspect-square w-full"
 										/>
 									</div>
 									<p className="w-full font-semibold text-lg text-muted-foreground">
@@ -152,6 +167,7 @@ export const Services = () => {
 	const mobileServices = getMobileServices(t);
 	const laptopServices = getLaptopServices(t);
 	const softwareServices = getSoftwareServices(t);
+	const consoleServices = getConsoleServices(t);
 
 	return (
 		<div className="w-full bg-slate-50 py-20" id="services">
@@ -169,19 +185,25 @@ export const Services = () => {
 						title={t("mobile")}
 						icon={Smartphone}
 						services={mobileServices}
-						delay={1000}
+						delay={1500}
 					/>
 					<ServiceCarousel
 						title={t("laptop")}
 						icon={Laptop}
 						services={laptopServices}
-						delay={1400}
+						delay={1500}
 					/>
 					<ServiceCarousel
 						title={t("software")}
 						icon={Settings}
 						services={softwareServices}
-						delay={1800}
+						delay={1500}
+					/>
+					<ServiceCarousel
+						title={t("console")}
+						icon={Gamepad}
+						services={consoleServices}
+						delay={1500}
 					/>
 				</div>
 				<Link href="#contact">

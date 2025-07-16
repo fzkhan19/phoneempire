@@ -26,6 +26,7 @@
     "mobile": "Handy-Reparaturen",
     "laptop": "Laptop- und PC-Reparaturen",
     "software": "Software-Dienstleistungen",
+    "console": "Konsolen-Reparaturen",
     "bookService": "Service buchen",
     "mobileServices": {
       "screenRepair": "Bildschirm-Reparatur",
@@ -35,7 +36,12 @@
       "buttonRepair": "Taste-Reparatur",
       "chargePortRepair": "Ladeanschluss-Reparatur",
       "speakerRepair": "Mikrofon/Lautsprecher-Reparatur",
-      "carrierUnlock": "Deine Mobilfunkanbieter entsperren"
+      "carrierUnlock": "Deine Mobilfunkanbieter entsperren",
+      "motherboardRepair": "Motherboard-Reparatur"
+    },
+    "consoleServices": {
+      "playstationRepair": "PlayStation-Ladeanschluss-Reparatur",
+      "nintendoRepair": "Nintendo Switch-Ladeanschluss-Reparatur"
     },
     "laptopServices": {
       "hardwareUpgrades": "Hardware-Upgrades",

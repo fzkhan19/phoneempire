@@ -26,6 +26,7 @@
     "mobile": "Mobile Phone Repairs",
     "laptop": "Laptop & PC Repairs",
     "software": "Software Services",
+    "console": "Console Repairs",
     "bookService": "Book a Service",
     "mobileServices": {
       "screenRepair": "Screen Repair",
@@ -35,7 +36,12 @@
       "buttonRepair": "Button Repair",
       "chargePortRepair": "Charge Port Repair",
       "speakerRepair": "Microphone/Speaker Repair",
-      "carrierUnlock": "Unlock your carrier service"
+      "carrierUnlock": "Unlock your carrier service",
+      "motherboardRepair": "Motherboard Repair"
+    },
+    "consoleServices": {
+      "playstationRepair": "PlayStation Charging Port Repair",
+      "nintendoRepair": "Nintendo Switch Charging Port Repair"
     },
     "laptopServices": {
       "hardwareUpgrades": "Hardware Upgrades",
