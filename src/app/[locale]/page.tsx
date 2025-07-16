@@ -3,6 +3,9 @@ import { PriceList } from "@/components/layout/PriceList";
 import { Services } from "@/components/layout/Services";
 import { Contact } from "@/components/layout/contact";
 import Testimonial from "@/components/testimonial-04/testimonial-04";
+import { Link } from "@/i18n/navigation";
+import { cn } from "@/lib/utils";
+import { IconBrandWhatsapp } from "@tabler/icons-react";
 
 export const runtime = "edge";
 export default function Home() {
@@ -14,6 +17,15 @@ export default function Home() {
 				<PriceList />
 				<Testimonial />
 				<Contact />
+				<Link
+					href="http://wa.me/4917670440689"
+					target="_blank"
+					className={cn(
+						"absolute right-8 bottom-4 z-50 rounded-full bg-green-600 p-3 transition-all hover:scale-110",
+					)}
+				>
+					<IconBrandWhatsapp size={34} className="text-white" />
+				</Link>
 			</div>
 		</article>
 	);
