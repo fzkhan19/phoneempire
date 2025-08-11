@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 /**
  * MarketingBanner component displays a sticky banner at the top of the viewport.
@@ -32,7 +32,7 @@ const MarketingBanner = () => {
 				</span>{" "}
 				{t("callToAction")}{" "}
 				<Link
-					href="https://your-web-dev-portfolio.com"
+					href="https://faiz-khan.in"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="text-primary underline hover:text-primary-foreground"
