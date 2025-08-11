@@ -41,7 +41,7 @@ export default async function RootLayout({
 				<meta name="apple-mobile-web-app-title" content="MyWebSite" />
 			</head>
 			<body className={cn("", inter.variable, manrope.variable)}>
-				<main className="no-scrollbar overflow-x-hidden overflow-y-scroll scroll-smooth">
+				<main className="overflow-x-hidden overflow-y-scroll scroll-smooth">
 					<Analytics />
 					<Script
 						// biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
