@@ -108,5 +108,16 @@
     "email": "E-Mail: phoneempire@gmx.de",
     "copyright": "© 2027 PHONE EMPIRE",
     "builtBy": "Diese Website wurde von FAIZ KHAN erstellt"
+  },
+  "marketingBanner": {
+    "message": "Erstellen Sie Ihre Traum-Website mit",
+    "sale": "50% RABATT!",
+    "callToAction": "Besuchen Sie unser",
+    "portfolioLink": "Portfolio",
+    "consultation": "und erhalten Sie eine kostenlose Beratung.",
+    "contactDetails": "Kontaktieren Sie uns unter",
+    "email": "faizpathan1717@gmail.com",
+    "phone": "+49015510862414",
+    "dismiss": "Schließen"
   }
 }
