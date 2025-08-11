@@ -11,20 +11,11 @@ import { useEffect, useState } from "react";
  */
 const MarketingBanner = () => {
 	const t = useTranslations("marketingBanner");
-	const [isVisible, setIsVisible] = useState(false); // State to control banner visibility
-
-	// Effect to check localStorage for dismissal status on component mount
-	useEffect(() => {
-		const dismissed = localStorage.getItem("marketingBannerDismissed");
-		if (!dismissed) {
-			setIsVisible(true); // Show banner if not dismissed previously
-		}
-	}, []); // Empty dependency array ensures this runs only once on mount
+	const [isVisible, setIsVisible] = useState(true); // State to control banner visibility
 
 	// Handler for dismissing the banner
 	const handleDismiss = () => {
 		setIsVisible(false); // Hide the banner
-		localStorage.setItem("marketingBannerDismissed", "true"); // Persist dismissal status in localStorage
 	};
 
 	// Don't render the banner if it's not visible
