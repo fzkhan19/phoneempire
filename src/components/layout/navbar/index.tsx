@@ -138,15 +138,15 @@ export const Navbar = () => {
 					href="/"
 				>
 					<Image
-						src={"/logo1.png"}
-						alt="logo"
+						src={"/logo.png"}
+						alt="Phone Empire Logo"
 						className="hidden md:block"
 						width={150}
 						height={70}
 					/>
 					<Image
-						src={"/logo1.png"}
-						alt="logo"
+						src={"/logo.png"}
+						alt="Phone Empire Logo"
 						className="md:hidden"
 						width={120}
 						height={20}
@@ -183,8 +183,8 @@ export const Navbar = () => {
 											href="/"
 										>
 											<Image
-												src={"/logo1.png"}
-												alt="logo"
+												src={"/logo.png"}
+												alt="Phone Empire Logo"
 												width={120}
 												height={20}
 											/>

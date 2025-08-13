@@ -138,32 +138,40 @@ export const METADATA: Metadata = {
 
 export const JSON_LD = {
 	"@context": "https://schema.org",
-	"@type": "Person",
-	name: siteMetadata.author,
+	"@type": "LocalBusiness",
+	name: siteMetadata.siteName,
+	image: `${siteMetadata.siteUrl}${siteMetadata.siteLogo}`,
+	"@id": siteMetadata.siteUrl,
 	url: siteMetadata.siteUrl,
-	image: `${siteMetadata.siteUrl}${siteMetadata.socialBanner}`,
-	description: siteMetadata.personalDescription,
-	jobTitle: siteMetadata.occupation,
-	worksFor: {
-		"@type": "Organization",
-		name: siteMetadata.company,
-	},
+	telephone: siteMetadata.phone,
 	address: {
 		"@type": "PostalAddress",
-		addressLocality: siteMetadata.location,
-		addressCountry: siteMetadata.countryCode,
+		streetAddress: "Kaiserstraße 22",
+		addressLocality: "Landstuhl",
+		postalCode: "66849",
+		addressCountry: "DE",
 	},
-	contactPoint: {
-		"@type": "ContactPoint",
-		telephone: siteMetadata.phone,
-		contactType: "Customer Service",
-		availableLanguage: siteMetadata.language,
-		areaServed: siteMetadata.areaServed,
-	},
+	openingHoursSpecification: [
+		{
+			"@type": "OpeningHoursSpecification",
+			dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+			opens: "10:15",
+			closes: "19:00",
+		},
+		{
+			"@type": "OpeningHoursSpecification",
+			dayOfWeek: "Saturday",
+			opens: "10:15",
+			closes: "17:00",
+		},
+	],
+	hasMap:
+		"https://www.google.com/maps/place/Phone+Empire/@49.4005852,7.568393,17z/data=!3m1!4b1!4m6!3m5!1s0x47963b516f4e64f7:0x5e7c8a6c8e3b3a6c!8m2!3d49.4005852!4d7.5709679!16s%2Fg%2F11b65v7y23?entry=ttu",
+	priceRange: "$$",
 	sameAs: siteMetadata.socialLinks,
-	hasOccupation: {
-		"@type": "Occupation",
-		name: siteMetadata.occupation,
-		description: siteMetadata.occupationDescription,
+	aggregateRating: {
+		"@type": "AggregateRating",
+		ratingValue: "4.5",
+		reviewCount: "100",
 	},
 };

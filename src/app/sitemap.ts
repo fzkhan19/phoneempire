@@ -8,17 +8,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
 	const staticUrls = [
 		{
 			url: `${baseUrl}/`,
-			lastModified: new Date(),
+			lastModified: "2024-07-26T00:00:00.000Z",
 			priority: 1.0,
 		},
 		{
 			url: `${baseUrl}/about`,
-			lastModified: new Date(),
+			lastModified: "2024-07-26T00:00:00.000Z",
 			priority: 0.8,
 		},
 		{
 			url: `${baseUrl}/content`,
-			lastModified: new Date(),
+			lastModified: "2024-07-26T00:00:00.000Z",
 			priority: 0.8,
 		},
 	];

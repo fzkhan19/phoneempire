@@ -5,7 +5,7 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 const nextConfig = {
 	images: {
-		domains: [],
+		domains: ["phone-empire.com"],
 	},
 	async headers() {
 		return [

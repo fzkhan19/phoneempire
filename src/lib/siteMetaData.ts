@@ -37,27 +37,24 @@ export const siteMetadata = {
 		"Phone Repair Store",
 	],
 	theme: "system", // system, dark or light
-	siteUrl: "https://phoneempire.com", // your website URL
+	siteUrl: "https://phone-empire.com", // your website URL
 	siteLogo: "/logo.png",
-	socialBanner: "/social-banner.jpg", // add social banner in the public folder
-	email: "contact@phoneempire.com",
-	phone: "+1-555-0123-4567",
-	github: "https://github.com/phoneempire",
-	twitter: "https://twitter.com/phoneempire",
-	linkedin: "https://www.linkedin.com/company/phoneempire",
+	socialBanner: "/opengraph-image.png", // add social banner in the public folder
+	email: "phoneempire@gmx.de",
+	phone: "+49017670440689",
 	locale: "en-US",
 	manifest: "/manifest.webmanifest",
 	siteName: "Phone Empire",
 	category: "Electronics Repair",
 	twitterHandle: "@phoneempire",
 	twitterId: "1234567890",
-	countryName: "United States",
-	countryCode: "US",
+	countryName: "Germany",
+	countryCode: "DE",
 	personalDescription:
 		"Professional phone repair service provider with years of experience in fixing all types of mobile devices.",
 	occupation: "Phone Repair Specialist",
 	company: "Phone Empire LLC",
-	location: "New York, NY",
+	location: "Landstuhl, Rhineland-Palatinate, Germany",
 	occupationDescription:
 		"Expert in diagnosing and repairing smartphones, tablets, and other mobile devices",
 	language: ["English", "Spanish"],
