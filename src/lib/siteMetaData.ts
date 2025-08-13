@@ -42,7 +42,7 @@ export const siteMetadata = {
 	socialBanner: "/opengraph-image.png", // add social banner in the public folder
 	email: "phoneempire@gmx.de",
 	phone: "+49017670440689",
-	locale: "en-US",
+	locale: "en-DE",
 	manifest: "/manifest.webmanifest",
 	siteName: "Phone Empire",
 	category: "Electronics Repair",
