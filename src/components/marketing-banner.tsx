@@ -40,21 +40,6 @@ const MarketingBanner = () => {
 					{t("portfolioLink")}
 				</Link>{" "}
 				{t("consultation")}
-				<br />
-				{t("contactDetails")}:{" "}
-				<a
-					href={`mailto:${t("email")}`}
-					className="text-primary underline hover:text-primary-foreground"
-				>
-					{t("email")}
-				</a>{" "}
-				|{" "}
-				<a
-					href={`tel:${t("phone")}`}
-					className="text-primary underline hover:text-primary-foreground"
-				>
-					{t("phone")}
-				</a>
 			</p>
 			<button
 				type="button"

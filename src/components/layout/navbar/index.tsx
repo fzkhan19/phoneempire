@@ -119,12 +119,12 @@ export const Navbar = () => {
 	);
 
 	return (
-		<div className="sticky top-0 right-0 left-0 z-40">
+		<>
 			{/* Marketing banner for web development services */}
 			<MarketingBanner />
 			<header
 				className={cn(
-					"flex w-full items-center justify-between md:mx-auto",
+					"sticky top-0 right-0 left-0 z-40 flex w-full items-center justify-between md:mx-auto",
 					"border border-secondary p-4",
 					// "shadow-primary/10 shadow-sm",
 					"border-0 hover:shadow-primary/20",
@@ -250,6 +250,6 @@ export const Navbar = () => {
 					</Link>
 				</div>
 			</header>
-		</div>
+		</>
 	);
 };
