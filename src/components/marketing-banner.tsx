@@ -32,7 +32,7 @@ const MarketingBanner = () => {
 				</span>{" "}
 				{t("callToAction")}{" "}
 				<Link
-					href="https://faiz-khan.in"
+					href="https://faiz-khan.com"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="text-primary underline hover:text-primary-foreground"

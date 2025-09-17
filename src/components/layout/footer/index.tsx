@@ -29,7 +29,7 @@ export default function Footer() {
 					<Label className="self-center pt-6 font-normal text-base md:mt-8 md:self-end">
 						<Link
 							className="rounded-sm bg-blue-50 p-1 font-semibold text-primary underline decoration-primary"
-							href="https://faiz-khan.in"
+							href="https://faiz-khan.com"
 							target="_blank"
 						>
 							{t("builtBy")}
