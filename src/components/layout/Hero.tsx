@@ -7,8 +7,7 @@ export const Hero = () => {
 	const t = useTranslations("hero");
 	return (
 		<>
-			<div className="mb-4 flex items-center justify-center gap-x-3 bg-red-800/90 p-4 text-white shadow-lg">
-				{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
+			{/* <div className="mb-4 flex items-center justify-center gap-x-3 bg-red-800/90 p-4 text-white shadow-lg">
 				<svg
 					className="h-8 w-8 flex-shrink-0"
 					fill="currentColor"
@@ -22,7 +21,7 @@ export const Hero = () => {
 					/>
 				</svg>
 				<p className="font-semibold text-xl">{t("parkingNotice")}</p>
-			</div>
+			</div> */}
 			<div className="w-full py-6 md:py-8 lg:py-10">
 				<div className="container mx-auto px-4">
 					<div className="grid grid-cols-1 items-center gap-4 md:gap-6 lg:grid-cols-2 lg:gap-8">
