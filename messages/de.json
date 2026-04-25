@@ -71,7 +71,9 @@
     "backCover": "Rückseite",
     "display": "Display",
     "battery": "Akku",
-    "chargingPort": "Ladeanschluss"
+    "chargingPort": "Ladeanschluss",
+    "comingSoon": "Neue Preisliste folgt in Kürze",
+    "comingSoonDesc": "Wir aktualisieren derzeit unsere Preise, um Ihnen die bestmöglichen Angebote zu bieten. Bleiben Sie gespannt!"
   },
   "testimonials": {
     "title": "Kundenbewertungen",

@@ -71,7 +71,9 @@
     "backCover": "Back Cover",
     "display": "Display",
     "battery": "Battery",
-    "chargingPort": "Charging Port"
+    "chargingPort": "Charging Port",
+    "comingSoon": "New price list coming soon",
+    "comingSoonDesc": "We are currently updating our prices to give you the best deals possible. Stay tuned!"
   },
   "testimonials": {
     "title": "Customer Testimonials",
